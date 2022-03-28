@@ -1,8 +1,8 @@
 public class EditDistance {
     public static void main(String[] args) {
-        String s1 = "casa";
-        String s2 = "pai";
-        System.out.println(minDistance(s1, s2));
+        String s1 = "Casablanca";
+        String s2 = "Portentoso";
+        System.out.println("Menor numero de iterações: " + minDistance(s1, s2));
     }
 
     // method 1: DP
@@ -28,6 +28,7 @@ public class EditDistance {
                 }
             }
         }
+
         return dp[m][n];
     }
 }
